@@ -1,0 +1,9 @@
+---
+
+- name: install Bracken via conda
+  conda_install:
+    name: "bracken"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "bracken_{{ env_name }}"
